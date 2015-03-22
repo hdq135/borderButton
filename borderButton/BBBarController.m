@@ -107,7 +107,6 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    //开启定时器
     if (self.timer) {
         [self.timer setFireDate:[NSDate distantPast]];
     }
@@ -115,7 +114,6 @@
 
 -(void)viewDidDisappear:(BOOL)animated
 {
-    //关闭定时器
     if (self.timer) {
         [self.timer setFireDate:[NSDate distantFuture]];
     }
